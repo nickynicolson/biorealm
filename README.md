@@ -3,7 +3,7 @@
 
 # Biogeographic Area Ontology
 
-This ontology... YOUR DESCRIPTION HERE
+This ontology describes the semantics of biogeographic areas and lists instances of these
 
 More information can be found at http://obofoundry.org/ontology/biorealm
 
