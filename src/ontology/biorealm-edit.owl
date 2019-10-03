@@ -1,45 +1,53 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/biorealm.owl#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/biorealm.owl>
-
 Import(<http://purl.obolibrary.org/obo/biorealm/imports/envo_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/biorealm/imports/ro_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/biorealm/imports/ecocore_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/biorealm/imports/pato_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/biorealm/imports/bfo_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/biorealm/imports/pco_import.owl>)
-
-
-
-Annotation(dce:title "Biogeographic Area Ontology")
-Annotation(dcterms:license "Unspecified")
+Import(<http://purl.obolibrary.org/obo/biorealm/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/biorealm/imports/ecocore_import.owl>)
+Import(<http://purl.obolibrary.org/obo/biorealm/imports/pato_import.owl>)
+Annotation(dce:creator <https://orcid.org/0000-0002-4049-0820>)
 Annotation(dce:description "None")
+Annotation(dce:title "Biogeographic Area Ontology")
+Annotation(dcterms:license <https://creativecommons.org/share-your-work/public-domain/cc0/>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BIOREALM_00000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BIOREALM_00000001>))
+Declaration(AnnotationProperty(dce:date))
+Declaration(AnnotationProperty(dce:description))
+Declaration(AnnotationProperty(dce:title))
+Declaration(AnnotationProperty(dcterms:license))
+
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/BIOREALM_00000000>
+# Class: <http://purl.obolibrary.org/obo/BIOREALM_00000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000000> "root node"@en)
 
+# Class: <http://purl.obolibrary.org/obo/BIOREALM_00000001> (ecosystem with monophyletic endemics)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/IAO_0000428>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ISBN:0520259459>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000001> "An ecosystem which has boundaries determined by the presence of at least two taxa that have persisted in a ecologically interconnected area since their speciation."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://orcid.org/0000-0002-4049-0820>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000001> "2019-10-03T14:15:58Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000001> "area with monophyletic endemics"@en)
+AnnotationAssertion(Annotation(rdfs:comment "currently we see a biogeographic area as an operational unit for biogeographic analysis. In an areagram (i.e. a cladogram of areas), it is a node and the leaves are areas of endemism.") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000001> "biogeographic area"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000001> "ecosystem with monophyletic endemics"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/ENVO_01001110>)
+SubClassOf(<http://purl.obolibrary.org/obo/BIOREALM_00000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01000817>))
+
 
 )
-
