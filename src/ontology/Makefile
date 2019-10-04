@@ -67,7 +67,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  envo ro ecocore pato bfo pco
+IMPORTS =  envo ro ecocore pato bfo pco ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_FILES = $(foreach n,$(IMPORT_ROOTS), $(foreach f,$(FORMATS), $(n).$(f)))
@@ -241,6 +241,15 @@ imports/%_import.obo: imports/%_import.owl
 IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
 
+
+## ONTOLOGY: ncbitaxon
+## Copy of ncbitaxon is re-downloaded whenever source changes
+mirror/ncbitaxon.trigger: $(SRC)
+
+mirror/ncbitaxon.owl: mirror/ncbitaxon.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ncbitaxon.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
 
 
 ## ONTOLOGY: envo
