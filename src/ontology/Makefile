@@ -242,14 +242,13 @@ IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
 
 
-## ONTOLOGY: ncbitaxon
-## Copy of ncbitaxon is re-downloaded whenever source changes
-mirror/ncbitaxon.trigger: $(SRC)
+ncbitaxon.obo:
+	wget $(OBO)/ncbitaxon.obo -O $@.tmp && mv $@.tmp $@
+.PRECIOUS: ncbitaxon.obo
 
-mirror/ncbitaxon.owl: mirror/ncbitaxon.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ncbitaxon.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-.PRECIOUS: mirror/%.owl
+mirror/ncbitaxon.owl: ncbitaxon.obo
+	OWLTOOLS_MEMORY=12G $(OWLTOOLS) $< --remove-annotation-assertions -l -s -d --remove-axiom-annotations --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon.owl -o $@
+.PRECIOUS: mirror/ncbitaxon.owl
 
 
 ## ONTOLOGY: envo
