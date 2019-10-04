@@ -243,11 +243,11 @@ MIR=true # Global parameter to bypass mirror generation
 
 
 ncbitaxon.obo:
-	wget $(OBO)/ncbitaxon.obo -O $@.tmp && mv $@.tmp $@
+	wget $(URIBASE)/ncbitaxon.obo -O $@.tmp && mv $@.tmp $@
 .PRECIOUS: ncbitaxon.obo
 
 mirror/ncbitaxon.owl: ncbitaxon.obo
-	OWLTOOLS_MEMORY=12G $(OWLTOOLS) $< --remove-annotation-assertions -l -s -d --remove-axiom-annotations --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon.owl -o $@
+	OWLTOOLS_MEMORY=12G owltools $< --remove-annotation-assertions -l -s -d --remove-axiom-annotations --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon.owl -o $@
 .PRECIOUS: mirror/ncbitaxon.owl
 
 
