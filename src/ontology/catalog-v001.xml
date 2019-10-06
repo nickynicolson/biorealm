@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-
-
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/envo_import.owl" uri="imports/envo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/envo_import.obo" uri="imports/envo_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ro_import.obo" uri="imports/ro_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ecocore_import.owl" uri="imports/ecocore_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ecocore_import.obo" uri="imports/ecocore_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/pato_import.owl" uri="imports/pato_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/pato_import.obo" uri="imports/pato_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/pco_import.owl" uri="imports/pco_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/pco_import.obo" uri="imports/pco_import.obo"/>
-  
-
-
-  
-
-  <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/biorealm/releases/2019-10-04/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/envo_import.owl" uri="imports/envo_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/envo_import.obo" uri="imports/envo_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ecocore_import.owl" uri="imports/ecocore_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ecocore_import.obo" uri="imports/ecocore_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/pato_import.obo" uri="imports/pato_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/pco_import.owl" uri="imports/pco_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/pco_import.obo" uri="imports/pco_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/biorealm/imports/ncbitaxon_import.obo" uri="imports/ncbitaxon_import.obo"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
