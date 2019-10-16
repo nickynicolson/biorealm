@@ -25,6 +25,9 @@ Annotation(dcterms:license <https://creativecommons.org/share-your-work/public-d
 Declaration(Class(<http://purl.obolibrary.org/obo/BIOREALM_00000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BIOREALM_00000001>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000005>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000006>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000007>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000008>))
 Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
@@ -57,7 +60,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/BIOREALM_00000001> ObjectSomeValuesFr
 #   Named Individuals
 ############################
 
-# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000005> (Northeastern australia)
+# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000005> (Northern desert)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "an instance of ecosystems with endemics characterised by the distribution of:
 -Corymbia deserticola sp2
@@ -65,11 +68,52 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000005> <http://orcid.org/0000-0002-4049-0820>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000005> "2019-10-10T13:12:47Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000005> <https://www.worldwildlife.org/ecoregions/aa0707>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Northeastern australia"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Northern desert"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000005>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_368813>) <http://purl.obolibrary.org/obo/BIOREALM_00000005>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_463308>) <http://purl.obolibrary.org/obo/BIOREALM_00000005>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000005> <http://purl.obolibrary.org/obo/ENVO_01001571>)
+
+# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000006> (Inland South east Queensland)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000006> "an instance of ecosystem with endemics characterised by the distribution of:
+- Corymbia trachyploia
+- Eucalyptus balleyana")
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000006> <http://orcid.org/0000-0002-4049-0820>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000006> "2019-10-16T14:10:29Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000006> <https://www.worldwildlife.org/ecoregions/aa0702>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000006> "Inland South east Queensland"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000006>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183807>) <http://purl.obolibrary.org/obo/BIOREALM_00000006>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183810>) <http://purl.obolibrary.org/obo/BIOREALM_00000006>)
+
+# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000007> (Onland South east Queensland)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000007> "an instance of ecosystems with endemics characterised by the distribution of:
+- Corymbia trachyploia
+- Eucalyptus baileyana")
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000007> <http://orcid.org/0000-0002-4049-0820>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000007> "2019-10-16T14:18:48Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000007> <https://www.worldwildlife.org/ecoregions/aa0803>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000007> "Onland South east Queensland")
+ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000007>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183807>) <http://purl.obolibrary.org/obo/BIOREALM_00000007>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183810>) <http://purl.obolibrary.org/obo/BIOREALM_00000007>)
+
+# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000008> (Coastal East Queensland and Mac Pherson Macleay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000008> "an instance of ecosystems with endemics characterised by the distribution of:
+- Corymbia dolichocarpa
+- Corymbia gummifera
+- Eucalyptus baileyana")
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000008> <http://orcid.org/0000-0002-4049-0820>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000008> "2019-10-16T14:29:52Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000008> <https://www.worldwildlife.org/ecoregions/aa0409>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000008> "Coastal East Queensland and Mac Pherson Macleay"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000008>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183803>) <http://purl.obolibrary.org/obo/BIOREALM_00000008>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183810>) <http://purl.obolibrary.org/obo/BIOREALM_00000008>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_34326>) <http://purl.obolibrary.org/obo/BIOREALM_00000008>)
 
 
 )
