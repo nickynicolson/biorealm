@@ -67,6 +67,8 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000005> 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000005> <https://www.worldwildlife.org/ecoregions/aa0707>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Northeastern australia"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000005>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_368813>) <http://purl.obolibrary.org/obo/BIOREALM_00000005>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_463308>) <http://purl.obolibrary.org/obo/BIOREALM_00000005>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000005> <http://purl.obolibrary.org/obo/ENVO_01001571>)
 
 
