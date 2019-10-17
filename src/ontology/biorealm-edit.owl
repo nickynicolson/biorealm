@@ -98,7 +98,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000007> "Onland South east Queensland")
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000007>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183807>) <http://purl.obolibrary.org/obo/BIOREALM_00000007>)
-ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183810>) <http://purl.obolibrary.org/obo/BIOREALM_00000007>)
+ClassAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/c593a46b-b191-49f7-8609-78274e7cbd58>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183810>) <http://purl.obolibrary.org/obo/BIOREALM_00000007>)
 
 # Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000008> (Coastal East Queensland and Mac Pherson Macleay)
 
