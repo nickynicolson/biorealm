@@ -28,7 +28,6 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000005>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000006>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000007>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000008>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000009>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000010>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000011>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000013>))
@@ -43,6 +42,8 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000023>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000024>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000025>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000026>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000028>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BIOREALM_00000029>))
 Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
@@ -123,15 +124,18 @@ Eucalyptus tephrodes (NCBI:txid1711562)
 Eucalyptus victrix (NCBI:txid1230916)")
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000005> <http://orcid.org/0000-0002-4049-0820>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000005> "2019-10-10T13:12:47Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000005> <https://aba.myspecies.info/nontaxonomy/term/87>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000005> <https://www.oneearth.org/ecoregions/great-sandy-tanami-desert/>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000005> <https://www.worldwildlife.org/ecoregions/aa1304>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "IBRA
-Little Sandy Desert  
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/87>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Austral Bioregionalisation Atlas
+Central desert Ebach et al. 2015")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/great-sandy-tanami-desert/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Ecoregion: Great Sandy-Tanami desert
+Biome: Deserts & Xeric Shrublands
+Realm: Australasia
+Eco ID: 210")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+BRT Burt Plain
+DMR Davenport Murchison Ranges
 TAN Tanami")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Northeastern Australia")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Northwestern Australia")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "The Great Sandy-Tanami Desert ecoregion")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1304>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000005> "WWF
+Northwestern Australia AA1304")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000005> "Central desert"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000005>)
 ClassAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/ba50f5d0-edd8-4bc4-8475-644d1f0aa3b9>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/1ac97524-70fb-4bef-9008-6981c9bb0e0c>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_463308>) <http://purl.obolibrary.org/obo/BIOREALM_00000005>)
@@ -369,7 +373,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Temperate Broadleaf & Mixed Forests
 Realm: Australasia
 Eco ID: 168")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000006> "IBRA 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000006> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
 NNC NSW North Coast
 SYB Sydney Basin")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000006> "Southeastern"@en)
@@ -636,7 +640,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa0702>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000008> "Eastern Australia")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/brigalow-tropical-savanna/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000008> "Ecoregion: Brigalow tropical savanna")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/eastern-australian-temperate-forests/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000008> "Ecoregion: Eastern Australian temperate forests")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000008> "IBRA
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000008> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
 CMC Central Mackay Coast
 BBN Brigalow Betl North
 BBS Brigalow Belt South")
@@ -648,80 +652,6 @@ ClassAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXre
 ClassAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/c5bf3e90-23f6-49a2-b468-e0c9238eb1a1>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/de7ae6db-1f42-46fe-aebc-9099b70a7d5b>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/0b9bd291-1f88-45ff-a5c0-3003c03ed425>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183807>) <http://purl.obolibrary.org/obo/BIOREALM_00000008>)
 ClassAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://biocache.ala.org.au/occurrences/39a3d5d0-643a-4944-af64-58d526b2b267") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://biocache.ala.org.au/occurrences/47269dd0-752c-4ce1-b999-7f7498b11b82") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://biocache.ala.org.au/occurrences/c593a46b-b191-49f7-8609-78274e7cbd58") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_183810>) <http://purl.obolibrary.org/obo/BIOREALM_00000008>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000008> <http://purl.obolibrary.org/obo/ENVO_01001571>)
-
-# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000009> (Arnhem Land)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000009> "an instance of ecosystem with monophyletic endemics characterised by the distribution of:
-Acacia auriculiformis (NCBI:txid205027)
-Acacia brockii (NCBI:txid1280794)
-Acacia conspersa (NCBI:txid1174760)
-Acacia difficilis (NCBI:txid1174774)
-Acacia dimidiata (NCBI:txid694540)
-Acacia gonocarpa (NCBI:txid1174801)
-Acacia hammondii (NCBI:txid1120452)
-Acacia lamprocarpa (NCBI:txid1174831)
-Acacia latescens (NCBI:txid1174832)
-Acacia lycopodiifolia (NCBI:txid139011)
-Acacia mountfordiae (NCBI:txid1174849)
-Acacia multisiliqua (NCBI:txid1280820)
-Acacia nuperrima ( NCBI:txid138035)
-Acacia oncinocarpa (NCBI:txid1174855)
-Acacia pellita (NCBI:txid1174862)
-Acacia platycarpa (NCBI:txid138519)
-Acacia plectocarpa (NCBI:txid1174868)
-Acacia praelongata (NCBI:txid334161)
-Acacia producta (NCBI:txid1280822)
-Acacia proiantha (NCBI:txid1174870)
-Acacia sericoflora (NCBI:txid1174890)
-Acacia tropica (NCBI:txid1174910)
-Acacia yirrkallensis (NCBI:txid1174918)
-
-Corymbia arafurica (NCBI:txid1711096)
-Corymbia bella(NCBI:txid415883)
-Corymbia bleeseri ( NCBI:txid415884)
-Corymbia dunlopiana (NCBI:txid1711104)
-Corymbia ferruginea (NCBI:txid1711109)
-Corymbia foelscheana (NCBI:txid673118)
-Corymbia grandifolia (NCBI:txid453219)
-Corymbia jacobsiana (NCBI:txid415887)
-Corymbia latifolia (NCBI:txid1711114)
-Corymbia papillosa (NCBI:txid1711118)
-Corymbia pauciseta (NCBI:txid1711119)
-Corymbia polysciada (NCBI:txid1711121)
-Eucalyptus alba (NCBI:txid183808)
-Eucalyptus distans (NCBI:txid1711269)
-Eucalyptus gigantangion (NCBI:txid666047)
-Eucalyptus gregoriensis (NCBI:txid1711327)
-Eucalyptus herbertiana (NCBI:txid1711335)
-Eucalyptus koolpinensis (NCBI:txid1711357)
-Eucalyptus miniata (NCBI:txid592794)
-Eucalyptus patellaris (NCBI:txid1711459)
-Eucalyptus phoenicea (NCBI:txid592795)
-Eucalyptus tectifica (NCBI:txid673116)
-Eucalyptus tetrodonta (NCBI:txid183856)
-Eucalyptus tintinnans (NCBI:txid673117)")
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000009> <http://orcid.org/0000-0002-4049-0820>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000009> "2019-10-18T08:08:09Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000009> <http://aba.myspecies.info/nontaxonomy/term/22>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000009> <https://www.oneearth.org/ecoregions/arnhem-land-tropical-savanna/>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000009> <https://www.worldwildlife.org/ecoregions/aa0701>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000009> "Arnhem Land Cracaft 1991 (ABA)
-Northern Australia (WWF)
-Arnhem Land Tropical Savannah (Ecoregions)
-Darwin coastal (IBRA)
-Daly Basin (IBRA)
-Pine creek (IBRA)
-Arnhem Plateau (IBRA)
-Arnhem coastal (IBRA)
-Central arnhem (IBRA)
-Gulf Fall and Uplands (IBRA)
-Gulf coastal (IBRA)")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000009> "Ecoregion: Arnhem Land tropical savanna")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000009> "Arnhem Land"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000009>)
-ClassAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/18e6b485-8ee6-4e54-a5cf-159ee4fa4905>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/28e1e5a3-d519-4006-a267-bc4da5f0b047>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/43f6ed01-16f0-4767-b53c-1961fe3ce71e>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_592794>) <http://purl.obolibrary.org/obo/BIOREALM_00000009>)
-ClassAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/ed68f2b6-2d8d-4b41-ac9a-877c37b845af>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/59b99f4a-6def-47d3-990b-388b4327ba66>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/6e3b671f-4351-4f4a-9875-948103bde2ad>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://biocache.ala.org.au/occurrences/907cdad2-e77d-43d8-85b0-e1e7c5e2d07e>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=666047>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_666047>) <http://purl.obolibrary.org/obo/BIOREALM_00000009>)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000009> <http://purl.obolibrary.org/obo/ENVO_01001571>)
 
 # Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000010> (Great Sandy Desert Interzone)
 
@@ -762,7 +692,8 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Deserts & Xeric Shrublands
 Realm: Australasia
 Eco ID: 210")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000010> "IBRA: GSD Great Sandy Desert")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000010> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+GSD Great Sandy Desert")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1304>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000010> "Northwestern australia_AA1304")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000010> "Great Sandy Desert Interzone"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000010>)
@@ -805,7 +736,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Tropical & Subtropical Grasslands, Savannas & Shrublands
 Realm: Australasia
 Eco ID: 186")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000011> "IBRA
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000011> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
 DAL Dampierland
 CEK Central Kimberley
 NOK Northern Kimberley
@@ -830,6 +761,8 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Deserts & Xeric Shrublands
 Realm: Australasia
 Eco ID: 213")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000013> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+PIL Pilbara")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1307>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000013> "Western_Australia_AA1307")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000013> "'Pilbara'"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000013>)
@@ -876,12 +809,6 @@ Acacia tysonii (NCBI:txid1280829)")
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000014> <http://orcid.org/0000-0002-4049-0820>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000014> "2019-10-18T09:09:42Z"^^xsd:dateTime)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/24>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000014> "Western desert Cracraft 1991")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000014> "CAR Carnavon
-LSD Little Sandy Desert
-GID Gibson Desert
-CER Central Ranges
-GVD Great Victoria Desert
-MUR Murchison")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/carnarvon-xeric-shrublands/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000014> "Ecoregion: Carnarvon xeric shrublands
 Biome: Deserts & Xeric Shrublands
 Realm: Australasia
@@ -898,6 +825,13 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Deserts & Xeric Shrublands
 Realm: Australasia
 Eco ID: 216")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000014> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+CAR Carnavon
+LSD Little Sandy Desert
+GID Gibson Desert
+CER Central Ranges
+GVD Great Victoria Desert
+MUR Murchison")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1304>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000014> "Northwestern Australia_AA1304")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1310>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000014> "Western Australia_AA1310")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1303>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000014> "Western central Australia_AA1303")
@@ -1214,7 +1148,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Mediterranean Forests, Woodlands & Scrub
 Realm: Australasia
 Eco ID: 206")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000015> "IBRA
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000015> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
 GES Geraldton Sandplains
 AVW Avon Wheatbelt
 MAL Mallee
@@ -1401,7 +1335,8 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Mediterranean Forests, Woodlands & Scrub
 Realm: Australasia
 Eco ID: 197")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000016> "IBRA COO Coolgardie")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000016> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+COO Coolgardie")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1201>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000016> "Western_Australia_AA1201")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000016> "Southwest Interzone"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000016>)
@@ -1475,7 +1410,8 @@ AnnotationAssertion(Annotation(rdfs:comment <https://www.oneearth.org/ecoregions
 Biome: Mediterranean Forests, Woodlands & Scrub
 Realm: Australasia
 Eco ID: 201")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000017> "IBRA: HAM Hampton")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000017> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+HAM Hampton")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000017> "'Hampton'"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000017>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000017> <http://purl.obolibrary.org/obo/ENVO_01001571>)
@@ -1492,7 +1428,8 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Deserts & Xeric Shrublands
 Realm: Australasia
 Eco ID: 212")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000018> "IBRA NUL Nullarbor")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000018> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+NUL Nullarbor")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1306>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000018> "Southern_Australia_AA1306")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000018> "'Nullarbor'"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000018>)
@@ -1536,7 +1473,8 @@ AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_0000001
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000019> "2019-10-18T09:11:02Z"^^xsd:dateTime)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/29>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000019> "Eyre peninsula Cracraft 1991")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/eyre-and-yorke-mallee/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000019> "Ecoregion: Eyre and Yorke mallee")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000019> "IBRA: EYB Eyre Yorke Block")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000019> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+EYB Eyre Yorke Block")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1203>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000019> "Southern central Australia, including the Eyre pen")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000019> "Eyre Peninsula"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000019>)
@@ -1574,7 +1512,8 @@ AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_0000002
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000021> "2019-10-18T09:11:29Z"^^xsd:dateTime)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/20>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000021> "Victoria crisp et al. 1995")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1208>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000021> "Eastern part of Southern Coast of Australia_AA1208")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000021> "SEH Southeastern Highlands
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000021> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+SEH Southeastern Highlands
 SEC Southeast Corner
 AUA Australian Alps
 VIM Victorian Midlands
@@ -1605,16 +1544,20 @@ Acacia faucium (NCBI:txid1174792)
 Acacia tephrina (NCBI:txid1173666)")
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000023> <http://orcid.org/0000-0002-4049-0820>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000023> "2019-10-18T09:12:22Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000023> <https://aba.myspecies.info/nontaxonomy/term/88>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000023> <https://www.oneearth.org/ecoregions/mitchell-grass-downs/>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000023> <https://www.worldwildlife.org/ecoregions/aa0707>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000023> "CENTRAL QUEENSLAND Ebach et al. 2015
-IBRA Mitchell Grass Downs")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/88>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000023> "Austral Bioregionalisation Atlas
+Central Queensland Ebach et al. 2015")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/mitchell-grass-downs/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000023> "Ecoregion: Mitchell Grass Downs
+Biome: Tropical & Subtropical Grasslands, Savannas & Shrublands
+Realm: Australasia
+Eco ID: 187")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000023> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+MGD Mitchell Grass Downs
+DEU Desert Uplands")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000023> "Central Queensland"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000023>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000023> <http://purl.obolibrary.org/obo/ENVO_01001571>)
 
-# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000024> ('Atherton')
+# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000024> (Atherton plateau)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000024> "an instance of ecosystem with monophyletic endemics characterised by the distribution of:
 Acacia spirorbis (NCBI:txid1280825)
@@ -1622,12 +1565,17 @@ Banksia plagiocarpa (NCBI:txid199787)
 Eucalyptus paedoglauca (NCBI:txid1711454)")
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000024> <http://orcid.org/0000-0002-4049-0820>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000024> "2019-10-18T09:12:33Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000024> <https://aba.myspecies.info/nontaxonomy/term/16>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000024> <https://www.oneearth.org/ecoregions/queensland-tropical-rainforests/>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000024> <https://www.worldwildlife.org/ecoregions/aa0705>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000024> "Ecoregion: Queensland tropical rain forests")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000024> "WET = Wet tropics (IBRA)")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000024> "'Atherton'"@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/16>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000024> "Austral Bioregionalisation Atlas
+Atherton plateau Cracraft 1991")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/queensland-tropical-rainforests/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000024> "Ecoregion: Queensland tropical rain forests
+Biome: Tropical & Subtropical Moist Broadleaf Forests
+Realm: Australasia
+Eco ID: 150")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000024> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+WET = Wet tropics")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa0705>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000024> "WWF
+Northeastern Australia AA0705")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000024> "Atherton plateau"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000024>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000024> <http://purl.obolibrary.org/obo/ENVO_01001571>)
 
@@ -1679,12 +1627,16 @@ Eucalyptus persistens (NCBI:txid1711464)
 Eucalyptus platyphylla (NCBI:txid183846)")
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000025> <http://orcid.org/0000-0002-4049-0820>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000025> "2019-10-18T09:12:50Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000025> <https://aba.myspecies.info/nontaxonomy/term/17>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000025> <https://www.oneearth.org/ecoregions/cape-york-peninsula-tropical-savanna/>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/BIOREALM_00000025> <https://www.worldwildlife.org/ecoregions/aa0703>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000025> "Ecoregion: Cape York Peninsula tropical savanna
-Cape York Peninsula Cracraft 1991
-Northeastern_Australia_AA0703")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/17>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000025> "Austral Bioregionalisation Atlas
+Cape York Peninsula Cracraft 1991")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/cape-york-peninsula-tropical-savanna/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000025> "Ecoregion: Cape York Peninsula tropical savanna
+Biome: Tropical & Subtropical Grasslands, Savannas & Shrublands
+Realm: Australasia
+Eco ID: 183")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000025> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+CYP = Cape York Peninsula")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa0703>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000025> "WWF
+Northeastern Australia AA0703")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000025> "Cape York Peninsula"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000025>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000025> <http://purl.obolibrary.org/obo/ENVO_01001571>)
@@ -1724,7 +1676,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 Biome: Temperate Broadleaf & Mixed Forests
 Realm: Australasia
 Eco ID: 179")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000026> "IBRA:
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000026> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
 TNS Tasmanian Northern Slopes
 TCH Tasmanian Central Highlands
 TWE Tasmanian West
@@ -1736,6 +1688,135 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000026> "'Tasmania'"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000026>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BIOREALM_00000026> <http://purl.obolibrary.org/obo/ENVO_01001571>)
+
+# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000028> (Adelaïde)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000028> "an instance of an ecosystem with monophyletic endemics characterised by the distribution of:
+Acacia acinacea (NCBI:txid1174689)
+Acacia aculeatissima (NCBI:txid1174694 )
+Acacia argyrophylla (NCBI:txid1120440)
+Acacia brachybotrya (NCBI:txid383634)
+Acacia euthycarpa (NCBI:txid178751)
+Acacia menzelii (NCBI:txid1174847)
+Acacia myrtifolia (NCBI:txid138032)
+Acacia mitchellii (NCBI:txid178754)
+Acacia nanodealbata (NCBI:txid383650)
+Acacia paradoxa (NCBI:txid139014)
+Acacia retinodes (NCBI:txid1050817)
+Acacia rhetinocarpa (NCBI:txid1174882)
+Acacia rhigiophylla (NCBI:txid866007)
+Acacia spinescens (NCBI:txid139016)
+Banksia marginata (NCBI:txid199779)
+Banksia ornata (NCBI:txid199784)
+Banksia saxicola (NCBI:txid199792)
+Eucalyptus alaticaulis (NCBI:txid1629600)
+Eucalyptus arenacea (NCBI:txid582358)
+Eucalyptus aromaphloia (NCBI:txid87663)
+Eucalyptus baxteri (NCBI:txid1171781)
+Eucalyptus calycogona (NCBI:txid1711197)
+Eucalyptus cosmophylla (NCBI:txid452570)
+Eucalyptus fasciculosa (NCBI:txid1226037)
+Eucalyptus incrassata (NCBI:txid1711342)
+Eucalyptus leptophylla (NCBI:txid1711371)
+Eucalyptus leucoxylon (NCBI:txid34318)
+Eucalyptus obliqua (NCBI:txid36592)
+Eucalyptus ovata (NCBI:txid155760)
+Eucalyptus paludicola (NCBI:txid452573)
+Eucalyptus porosa (NCBI:txid795992)
+Eucalyptus serraensis (NCBI:txid582377)
+Eucalyptus verrucata (NCBI:txid582381)
+Eucalyptus victoriana (NCBI:txid1225877)
+Eucalyptus viminalis (NCBI:txid155764)
+Eucalyptus willisii (NCBI:txid87689)
+Eucalyptus yarraensis (NCBI:txid1711601)")
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000028> <http://orcid.org/0000-0002-4049-0820>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000028> "2022-04-20T12:54:00Z"^^xsd:dateTime)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/28>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000028> "Adelaïde Cracraft 1991")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/murray-darling-woodlands-and-mallee/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000028> "Ecoregion: Naracoorte woodlands
+Biome: Mediterranean Forests, Woodlands & Scrub
+Realm: Australasia
+Eco ID: 204")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000028> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+MDD = Murray Darling Depression
+NCP = Naracoorte coastal Plain
+VIM = Victorian Midlands")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa1207>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000028> "WWF_Southeastern_Australia_AA1207")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000028> "Adelaïde"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000028>)
+
+# Individual: <http://purl.obolibrary.org/obo/BIOREALM_00000029> (Arnhem Land)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BIOREALM_00000029> "An instance of an ecosystem with monophyletic endemics characterised by the distribution of:
+Acacia auriculiformis (NCBI:txid205027)
+Acacia brockii (NCBI:txid1280794)
+Acacia conspersa (NCBI:txid1174760)
+Acacia difficilis (NCBI:txid1174774)
+Acacia dimidiata (NCBI:txid694540)
+Acacia gonocarpa (NCBI:txid1174801)
+Acacia hammondii (NCBI:txid1120452)
+Acacia lamprocarpa (NCBI:txid1174831)
+Acacia latescens (NCBI:txid1174832)
+Acacia lycopodiifolia (NCBI:txid139011)
+Acacia mountfordiae (NCBI:txid1174849)
+Acacia multisiliqua (NCBI:txid1280820)
+Acacia nuperrima ( NCBI:txid138035)
+Acacia oncinocarpa (NCBI:txid1174855)
+Acacia pellita (NCBI:txid1174862)
+Acacia platycarpa (NCBI:txid138519)
+Acacia plectocarpa (NCBI:txid1174868)
+Acacia praelongata (NCBI:txid334161)
+Acacia producta (NCBI:txid1280822)
+Acacia proiantha (NCBI:txid1174870)
+Acacia sericoflora (NCBI:txid1174890)
+Acacia tropica (NCBI:txid1174910)
+Acacia yirrkallensis (NCBI:txid1174918)
+
+Corymbia arafurica (NCBI:txid1711096)
+Corymbia bella(NCBI:txid415883)
+Corymbia bleeseri ( NCBI:txid415884)
+Corymbia dunlopiana (NCBI:txid1711104)
+Corymbia ferruginea (NCBI:txid1711109)
+Corymbia foelscheana (NCBI:txid673118)
+Corymbia grandifolia (NCBI:txid453219)
+Corymbia jacobsiana (NCBI:txid415887)
+Corymbia latifolia (NCBI:txid1711114)
+Corymbia papillosa (NCBI:txid1711118)
+Corymbia pauciseta (NCBI:txid1711119)
+Corymbia polycarpa (NCBI:txid183806)
+Corymbia polysciada (NCBI:txid1711121)
+Corymbia ptychocarpa (NCBI:txid360302)
+Eucalyptus alba (NCBI:txid183808)
+Eucalyptus distans (NCBI:txid1711269)
+Eucalyptus gigantangion (NCBI:txid666047)
+Eucalyptus gregoriensis (NCBI:txid1711327)
+Eucalyptus herbertiana (NCBI:txid1711335)
+Eucalyptus koolpinensis (NCBI:txid1711357)
+Eucalyptus miniata (NCBI:txid592794)
+Eucalyptus patellaris (NCBI:txid1711459)
+Eucalyptus phoenicea (NCBI:txid592795)
+Eucalyptus tectifica (NCBI:txid673116)
+Eucalyptus tetrodonta (NCBI:txid183856)
+Eucalyptus tintinnans (NCBI:txid673117)")
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/BIOREALM_00000029> <http://orcid.org/0000-0002-4049-0820>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/BIOREALM_00000029> "2022-04-23T05:58:05Z"^^xsd:dateTime)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://aba.myspecies.info/nontaxonomy/term/22>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000029> "Arnhem Land Cracraft 1991")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.oneearth.org/ecoregions/arnhem-land-tropical-savanna/>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000029> "Ecoregion: Arnhem Land tropical savanna
+Biome: Tropical & Subtropical Grasslands, Savannas & Shrublands
+Realm: Australasia
+Eco ID: 181")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000029> "Interim Biogeographic Regionalisation for Australia v7 (IBRA)
+DAC = Darwin coastal
+DAB = Daly Basin
+PCK = Pine creek
+ARP = Arnhem Plateau
+ARC = Arnhem coastal
+CEA = Central arnhem
+GFU = Gulf Fall and Uplands
+GUC = Gulf coastal")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.worldwildlife.org/ecoregions/aa0701>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BIOREALM_00000029> "WWF
+Northern Australia AA0701")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOREALM_00000029> "Arnhem Land"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/BIOREALM_00000001> <http://purl.obolibrary.org/obo/BIOREALM_00000029>)
 
 
 )
