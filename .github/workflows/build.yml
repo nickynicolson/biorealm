@@ -1,0 +1,21 @@
+name: Run tests
+on:
+  workflow_dispatch:
+  push:
+    tags:        
+      - v*.**
+
+jobs:
+    test:
+        name: Run tests
+        runs-on: ubuntu-latest
+        steps:
+          - name: Check out the repo
+            uses: actions/checkout@v2
+          - name: Run the build process with Docker
+            uses: addnab/docker-run-action@v3
+            with:
+                image: obolibrary/odkfull
+                run: |
+                    cd src/ontology 
+                    sh run.sh make testcomposer install
