@@ -16,4 +16,4 @@ jobs:
           - name: Run build
             run: |
               cd src/ontology 
-              sh run.sh make testcomposer install
+              make testcomposer install
